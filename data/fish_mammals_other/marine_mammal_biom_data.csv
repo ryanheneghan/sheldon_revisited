@@ -1,0 +1,128 @@
+UnID,Order,Family,Species,Body_mass_g,Range_area_m2,Pop_pre-whaling_reg,IUCN_current_reg,Pop_pre_data,IUCN_current_data,Reference,Other IUCN estimates,Pompa_area_m2_orig,shp_Area_m2
+1,Cetartiodactyla,Balaenopteridae,Balaenoptera musculus,190000000,3.5E+14,340280,10000,340280,10000,"Christensen 2006, pre-industrial estimate (IUCN estimates 189000)",Other: 5000-15000 mature; or 10000-25000 total,3.5E+14,4.63E+14
+2,Cetartiodactyla,Balaenidae,Balaena mysticetus,79700000,2.27E+13,150000,25000,150000,25000,"IUCN, pre-industrial estimate from summing separate estimates. Christensen 2006 estimates 67000",Other: 10000 mature; or > 25000 total,8.74E+12,2.27E+13
+3,Cetartiodactyla,Balaenidae,Eubalaena glacialis,75000000,2.67E+13,28200,468,28200,468,Christensen 2006 pre-industrial estimate (IUCN estimates 21000),,2.67E+13,2.04E+13
+4,Cetartiodactyla,Balaenidae,Eubalaena japonica,66000000,6E+12,37000,922,37000,922,"IUCN, numbers taken during 1839-1909, likely much higher",,6E+12,7.96E+12
+5,Cetartiodactyla,Balaenidae,Eubalaena australis,49000000,6.67E+13,86100,13600,86100,13600,Christensen 2006; pre-industrial estimate using a logistic growth model,,6.67E+13,1.07E+14
+6,Cetartiodactyla,Balaenopteridae,Balaenoptera physalus,47500000,3.49E+14,762400,145000,762400,145000,Christensen 2006; (IUCN estimate pre-1940s is 222222),Other: 100000 mature; or ~53000 total,3.49E+14,2.51E+14
+7,Cetartiodactyla,Balaenopteridae,Megaptera novaeangliae,30000000,3.5E+14,231700,135000,231700,135000,"IUCN, larger estimate",Other: 84000 mature,3.5E+14,3.65E+14
+8,Cetartiodactyla,Physeteridae,Physeter macrocephalus,30000000,2.4E+14,957000,360000,957000,360000,Christensen 2006 pre-industrial estimate (IUCN estimates 21000),Other: ~360000 total,2.4E+14,3.66E+14
+9,Cetartiodactyla,Eschrichtiidae,Eschrichtius robustus,27300000,5.64E+12,29830,26960,29830,26960,"IUCN, upper confidence interval for California migration. Christensen estimates 24600",Other: 15000-22000 total,5.64E+12,5.67E+12
+10,Cetartiodactyla,Balaenopteridae,Balaenoptera borealis,22100000,3.26E+14,246000,57000,246000,57000,Christensen 2006; IUCN estimate about 190000 for pre-whaling (1/0.3 * 57000),Other: 50000 mature,3.26E+14,3.21E+14
+11,Cetartiodactyla,Balaenopteridae,Balaenoptera edeni,20000000,2.25E+14,146300,80000,146300,80000,Christensen 2006; pre-industrial estimate using a logistic growth model,,2.25E+14,1.96E+14
+12,Cetartiodactyla,Ziphiidae,Berardius bairdii,11400000,2.36E+13,13140,8328,13140,8328,"IUCN, larger estimate",Other: >8760 total,2.36E+13,2.68E+13
+13,Cetartiodactyla,Balaenopteridae,Balaenoptera bonaerensis,7000000,2.35E+14,1012000,515000,1012000,515000,"IUCN, larger estimate of 95% CI as possibly indicative of pre-whaling estimates. Christensen 2006estimates 379000.",Other: 500000 total,2.35E+14,2.05E+14
+14,Cetartiodactyla,Balaenopteridae,Balaenoptera acutorostrata,5590000,1.39E+14,400000,200000,400000,200000,"IUCN, pre-whaling estimate from simulations suggesting population declined by half and is currently 200,000. Christensen 2006 estimates 258000",Other: 200000 mature,1.39E+14,3.67E+14
+15,Cetartiodactyla,Ziphiidae,Hyperoodon ampullatus,3390000,1.26E+13,90000,54000,90000,54000,"IUCN, pre-whaling estimate",,1.26E+13,3.03E+13
+16,Cetartiodactyla,Ziphiidae,Hyperoodon planifrons,3000000,8.68E+13,898950,599300,898950,599300,"IUCN, larger estimate; mean 599300","Other: > 599,300 partial estimate",8.68E+13,1.28E+14
+17,Carnivora,Phocidae,Mirounga leonina,1600000,1.1E+14,650000,650000,650000,650000,"IUCN, larger estimate; 325000 mature individuals",Other: 325000 mature; or 650000 total,8.98E+12,1.1E+14
+18,Cetartiodactyla,Monodontidae,Delphinapterus leucas,1380000,1.02E+13,400000,200000,400000,200000,"IUCN, larger estimate, at least 200000 current, and assuming at least 50% reductions",Other: 136000 mature; or >200000 total,1.02E+13,2.54E+13
+19,Carnivora,Phocidae,Mirounga angustirostris,1110000,2.05E+12,239000,225000,239000,225000,"IUCN, larger estimate",Other: 110000 mature; or 210000-239000 total,2.05E+12,1.19E+13
+20,Carnivora,Odobenidae,Odobenus rosmarus,1040000,5.37E+12,225000,225000,225000,225000,"IUCN, larger estimate",Other: 225000 total; or 112500 mature,5.37E+12,1.78E+13
+21,Cetartiodactyla,Ziphiidae,Mesoplodon peruvianus,1000000,1.23E+13,32678,32678,32678,32678,"IUCN, larger estimate",Other: 32678 total,1.23E+13,1.83E+13
+22,Cetartiodactyla,Monodontidae,Monodon monoceros,938000,6.37E+12,173134,173134,173134,173134,"IUCN, current estimate",Other: >170000 total; or 122925 mature,6.37E+12,1.25E+13
+23,Cetartiodactyla,Delphinidae,Globicephala melas,800000,1.05E+14,2000000,2000000,2000000,2000000,"IUCN, sum of all current estimates (underestimate)",Other: >1000000 total,1.05E+14,1.56E+14
+24,Cetartiodactyla,Delphinidae,Globicephala macrorhynchus,726000,2.39E+14,1000000,1000000,1000000,1000000,"IUCN, sum of all current estimates (strong underestimate)",,2.39E+14,1.97E+14
+25,Carnivora,Ursidae,Ursus maritimus,500000,9.84E+11,26000,26000,26000,26000,"IUCN, current estimates",,1.03E+13,9.84E+11
+26,Sirenia,Trichechidae,Trichechus manatus,467000,2.19E+12,5600,5600,5600,5600,"IUCN, larger estimate",Other: 2378 mature; or 4100 total,2.19E+12,1.3E+12
+27,Sirenia,Trichechidae,Trichechus senegalensis,454000,6.28E+11,20000,20000,20000,20000,"IUCN, 10000 mature individuals, assuming half are juveniles",Other: 10000 mature,6.28E+11,3.83E+11
+28,Carnivora,Phocidae,Leptonychotes weddellii,400000,7.15E+12,1000000,633000,1000000,633000,"IUCN, larger estimate",Other: 200000 - 1000000 total,7.15E+12,4.58E+13
+29,Cetartiodactyla,Delphinidae,Grampus griseus,388000,2.65E+14,1000000,1000000,1000000,1000000,IUCN estimate over a small proportion of range is 350000,,2.65E+14,2.12E+14
+30,Carnivora,Otariidae,Eumetopias jubatus,382000,3.05E+12,518926,160867,518926,160867,"IUCN, assuming 160,867 is a 69% reduction from pre-whaling estimates",Other: 81327 mature; or 160867 total,3.05E+12,9.43E+12
+31,Carnivora,Phocidae,Hydrurga leptonyx,353000,9.9E+12,330000,35500,330000,35500,"IUCN, pre-whaling estimate",Other: 18000 mature; or 35500 total,9.9E+12,4.58E+13
+32,Carnivora,Otariidae,Otaria byronia,300000,3.88E+12,445000,445000,445000,445000,"IUCN, current estimate",Other: 222500 mature; or 425000 total,3.88E+12,2.64E+12
+33,Carnivora,Phocidae,Monachus monachus,295000,2.73E+11,700,650,700,650,"IUCN, current estimate",Other: 350-450 mature; or 600-700 total,2.73E+11,2.94E+11
+34,Cetartiodactyla,Delphinidae,Tursiops truncatus,281000,2.33E+14,900000,900000,900000,900000,"IUCN, current estimate",Other: >600000 total,2.33E+14,2.27E+14
+35,Carnivora,Phocidae,Erignathus barbatus,280000,1.26E+13,375000,375000,375000,375000,"IUCN, current estimate",Other: >250000 total,1.26E+13,3.34E+13
+36,Cetartiodactyla,Delphinidae,Sousa chinensis,280000,8.91E+11,33332,16666,33332,16666,"IUCN, assuming a 50% decline from current estimate",Other: 10000 mature; or 13333-16666 total,8.91E+11,8.91E+11
+37,Carnivora,Phocidae,Cystophora cristata,279000,5.17E+12,1184211,675000,1184211,675000,"IUCN, assuming a 43% decline from current estimate",Other: 340000 mature; or 675000 total,5.17E+12,1.61E+13
+38,Carnivora,Otariidae,Phocarctos hookeri,273000,1.72E+11,19000,9880,19000,9880,"IUCN, assuming a 48% decline from current estimate",Other: 3031 mature; or 9880 total,1.72E+11,1.14E+12
+39,Cetartiodactyla,Delphinidae,Sousa sahulensis,240000,7.54E+11,10000,10000,10000,10000,"IUCN, larger estimate",Other: < 10000 mature,7.54E+11,4.65E+11
+40,Carnivora,Phocidae,Lobodon carcinophaga,225000,4.45E+13,26000000,8000000,26000000,8000000,"IUCN, average of 2 and 50 million",Other: 8000000 total; or 4000000 mature,1.9E+13,4.45E+13
+41,Carnivora,Phocidae,Ommatophoca rossii,208000,1.26E+13,220000,78500,220000,78500,"IUCN, early larger estimate",Other: 40000 mature; or 78500 total,1.26E+13,4.45E+13
+42,Carnivora,Otariidae,Zalophus wollebaeki,200000,83758618620,40000,16000,40000,16000,IUCN,Other: 9200-10600 mature,1.75E+11,83758618620
+43,Carnivora,Phocidae,Neomonachus schauinslandi,200000,4.24E+11,1520,1209,1520,1209,IUCN,Other: 632 mature; or 1209 total,4.24E+11,2.52E+11
+44,Carnivora,Phocidae,Halichoerus grypus,198000,2.44E+12,632000,632000,632000,632000,IUCN,Other: 316000 mature; or 632000 total,2.44E+12,5.1E+12
+45,Carnivora,Otariidae,Neophoca cinerea,189000,4.15E+11,25380,12690,25380,12690,"IUCN, assuming 50% decline",Other: 6500 mature; or 12690 total,1.35E+12,4.15E+11
+46,Cetartiodactyla,Delphinidae,Lagenorhynchus albirostris,187000,1.02E+13,200000,150000,200000,150000,"IUCN, summing existing estimates together (likely underestimate)",Other: >100000 total,1.02E+13,2.18E+13
+47,Cetartiodactyla,Delphinidae,Lagenorhynchus acutus,187000,8.52E+12,300000,225000,300000,225000,"IUCN, larger estimate",,8.52E+12,1.64E+13
+48,Carnivora,Otariidae,Arctocephalus pusillus,179000,1.71E+12,2120000,2000000,2120000,2000000,"IUCN, larger estimate",Other: 2120000 total; or 1060000 mature,1.71E+12,1.06E+12
+49,Cetartiodactyla,Delphinidae,Delphinus capensis,150000,9.31E+12,2000000,2000000,2000000,2000000,"IUCN extrapolation, underestimate",,9.31E+12,1.14E+13
+50,Cetartiodactyla,Delphinidae,Stenella coeruleoalba,142000,2.48E+14,3000000,3000000,3000000,3000000,"IUCN, larger estimate",Other: >2000000 total,2.48E+14,2.24E+14
+51,Carnivora,Otariidae,Zalophus californianus,137000,9.67E+11,632000,632000,632000,632000,"IUCN, larger estimate",Other: 632000 total; or 180000 mature,9.67E+11,1.69E+12
+52,Carnivora,Phocidae,Pagophilus groenlandicus,132000,2.36E+13,9000000,9000000,9000000,9000000,"IUCN, estimate of 4500000 mature individuals",Other: 9000000 total; or 4500000 mature,8.35E+12,2.36E+13
+53,Cetartiodactyla,Delphinidae,Lagenorhynchus obscurus,127000,6.19E+12,105000,105000,105000,105000,"IUCN, sum of current estimates",,6.19E+12,8.37E+12
+54,Cetartiodactyla,Delphinidae,Sousa plumbea,120000,7E+11,20000,20000,20000,20000,"IUCN, larger estimate",Other: ~20000 total,7E+11,4.3E+11
+55,Cetartiodactyla,Delphinidae,Orcaella heinsohni,120000,4.48E+11,20000,20000,20000,20000,"IUCN, larger estimate",Other: 9000-10000 mature,1.26E+12,4.48E+11
+56,Cetartiodactyla,Delphinidae,Lagenorhynchus australis,120000,5.91E+11,25000,25000,25000,25000,"IUCN, sum of current estimates",,5.91E+11,2.15E+12
+57,Cetartiodactyla,Delphinidae,Lissodelphis borealis,113000,1.27E+13,1000000,400000,1000000,400000,IUCN,Other: 100000-400000 total,1.27E+13,1.11E+13
+58,Cetartiodactyla,Delphinidae,Lagenorhynchus obliquidens,110000,2.09E+13,1000000,1000000,1000000,1000000,IUCN,,2.09E+13,1.76E+13
+59,Cetartiodactyla,Phocoenidae,Phocoenoides dalli,106000,1.99E+13,1800000,1800000,1800000,1800000,"IUCN, larger estimate",Other: >1200000 total,1.99E+13,2.53E+13
+60,Carnivora,Otariidae,Arctocephalus forsteri,101000,1.82E+12,200000,200000,200000,200000,"IUCN, larger estimate",Other: 100000 mature; or 200000 total,1.82E+12,1.28E+13
+61,Carnivora,Otariidae,Arctocephalus townsendi,101000,1.05E+12,30126,30126,30126,30126,"IUCN, larger estimate",Other: 10000 mature; or >20084 total,1.05E+12,1.18E+12
+62,Cetartiodactyla,Delphinidae,Sousa teuszii,100000,1.55E+11,3000,3000,3000,3000,"IUCN, larger estimate",Other: <1500 mature; or < 3000 total,1.55E+11,1.45E+11
+63,Carnivora,Phocidae,Phoca largha,98900,5.17E+12,960000,960000,960000,960000,"IUCN, larger estimate",Other: 320000 mature; or >640000 total,5.17E+12,1.01E+13
+64,Carnivora,Otariidae,Arctocephalus gazella,96600,3.92E+13,1000000,1000000,1000000,1000000,"IUCN, larger estimate",Other: 700000-1000000 mature,3.92E+13,2.54E+13
+65,Carnivora,Otariidae,Arctocephalus philippii,95000,3.62E+12,32278,32278,32278,32278,"IUCN, larger estimate",Other: 32278 total; or 16000 mature,1.64E+11,3.62E+12
+66,Cetartiodactyla,Platanistidae,Platanista gangetica,93500,1.56E+11,5000,5000,5000,5000,"IUCN, larger estimate",Other: <5000 total,1.56E+11,87231209770
+67,Carnivora,Otariidae,Arctocephalus tropicalis,92200,1.56E+13,600000,600000,600000,600000,"IUCN, larger estimate",Other: >400000 total,3.92E+13,1.56E+13
+68,Carnivora,Phocidae,Histriophoca fasciata,90000,3.63E+12,400000,400000,400000,400000,"IUCN, larger estimate",Other: 400000 total; or 183000 mature,3.63E+12,1.29E+13
+69,Carnivora,Phocidae,Phoca vitulina,87300,4.23E+12,640000,640000,640000,640000,"IUCN, larger estimate",Other: 315000 mature; or 610000-640000 total,4.23E+12,1.02E+13
+70,Cetartiodactyla,Delphinidae,Delphinus delphis,79300,3.1E+13,4000000,4000000,4000000,4000000,"IUCN, larger estimate",Other: 4000000 total,3.1E+13,8.18E+13
+71,Cetartiodactyla,Delphinidae,Cephalorhynchus commersonii,72400,4.62E+11,4000,4000,4000,4000,"IUCN, severe underestimate",Other: 22000-40000 total,4.62E+11,4.62E+11
+72,Cetartiodactyla,Phocoenidae,Neophocaena asiaeorientalis ,72000,1.63E+12,166667,50000,166667,50000,"IUCN, sum of existing surveys (underestimate), and assuming a 70% decline.",,1.63E+12,1.05E+12
+73,Carnivora,Phocidae,Pusa hispida,71000,1.48E+13,3000000,3000000,3000000,3000000,"IUCN, larger estimate",Other: 1500000 mature; or 3000000 total,1.48E+13,7.12E+13
+74,Carnivora,Otariidae,Arctocephalus australis,68000,1.67E+12,238000,238000,238000,238000,"IUCN, larger estimate",Other: 99000 mature; or 238000 total,1.67E+12,2.17E+12
+75,Cetartiodactyla,Delphinidae,Stenella attenuata,65700,1.85E+14,3750000,3750000,3750000,3750000,"IUCN, larger estimate",Other: > 2500000 total,1.85E+14,1.8E+14
+76,Cetartiodactyla,Delphinidae,Cephalorhynchus heavisidii,65000,1.29E+11,11267,11267,11267,11267,"IUCN, upper 95% CI estimate",Other: 800-1000 total,8.02E+11,1.29E+11
+77,Carnivora,Phocidae,Pusa caspica,62300,6.84E+11,168000,168000,168000,168000,"IUCN, larger estimate",Other: 168000 total; or 68000 mature,6.84E+11,4.19E+11
+78,Cetartiodactyla,Delphinidae,Cephalorhynchus hectori,60000,42555300000,7381,7381,7381,7381,IUCN current estimate,,42555300000,1.05E+11
+79,Carnivora,Otariidae,Callorhinus ursinus,55500,1.29E+13,1500000,1500000,1500000,1500000,"IUCN, larger estimate",Other: 650000 mature; or >1000000 total,1.29E+13,2.07E+13
+80,Cetartiodactyla,Phocoenidae,Phocoena phocoena,52700,9.2E+12,1050000,1050000,1050000,1050000,"IUCN, larger estimate",Other: >700000 total,9.2E+12,1.85E+13
+81,Cetartiodactyla,Delphinidae,Cephalorhynchus eutropia,45000,4.93E+11,10000,10000,10000,10000,"IUCN, larger estimate",Other: 3000-10000 mature,4.93E+11,3.55E+11
+82,Carnivora,Otariidae,Arctocephalus galapagoensis,39400,1.68E+11,15000,15000,15000,15000,"IUCN, larger estimate",Other: 15000 total; or 10000 mature,1.68E+11,86319306420
+83,Carnivora,Mustelidae,Enhydra lutris,27400,1.08E+12,300000,300000,300000,300000,"IUCN, early 1700s, after Johnson 1982",,1.08E+12,1.02E+12
+84,Cetartiodactyla,Ziphiidae,Ziphius cavirostris,4770000,2.8E+14,8043474,200000,,200000,"IUCN, abundance likely to be well over 100000.  Pre-whaling estimate is from regression.",,2.8E+14,2.7E+14
+85,Cetartiodactyla,Ziphiidae,Mesoplodon densirostris,2300000,2.58E+14,10668261,32678,,32678,"IUCN, includes Mesoplodon peruvianus. Pre-whaling estimate is from regression.",,2.58E+14,2.13E+14
+86,Cetartiodactyla,Delphinidae,Pseudorca crassidens,1360000,1.16E+14,6224949,58699,,58699,IUCN current estimate. Pre-whaling estimate is from regression.,,1.16E+14,1.69E+14
+87,Cetartiodactyla,Phocoenidae,Phocoena sinus,43100,7943071780,2401,59,,59,IUCN.  Pre-whaling estimate is from regression.,Other: 18 mature,18195900000,7943071780
+99,Cetartiodactyla,Neobalaenidae,Caperea marginata,32000000,4.91E+13,544532,18701,,,Estimated from body_mass-density regressions. ,,4.91E+13,8.22E+13
+100,Cetartiodactyla,Balaenopteridae,Balaenoptera omurai,15000000,1.68E+13,271766,12307,,,Estimated from body_mass-density regressions. ,,1.68E+13,1.25E+13
+125,Cetartiodactyla,Ziphiidae,Mesoplodon hotaula,10000000,5.75E+13,1140407,59881,,,Estimated from body_mass-density regressions. ,,5.75E+13,4.6E+13
+101,Cetartiodactyla,Ziphiidae,Berardius arnuxii,7000000,1.01E+14,2397987,143423,,,Estimated from body_mass-density regressions. ,,1.01E+14,1.42E+14
+95,Cetartiodactyla,Delphinidae,Orcinus orca,5630000,1.6E+14,4224466,273592,,,Estimated from body_mass-density regressions. IUCN estimates 50000 as an underestimated lower bound,,1.6E+14,3.81E+14
+102,Cetartiodactyla,Ziphiidae,Mesoplodon europaeus,5600000,1.23E+13,327283,21236,,,Estimated from body_mass-density regressions. ,,1.23E+13,4.07E+13
+103,Cetartiodactyla,Ziphiidae,Mesoplodon stejnegeri,4800000,6.81E+12,195081,13390,,,Estimated from body_mass-density regressions. ,,6.81E+12,1.01E+13
+104,Cetartiodactyla,Ziphiidae,Mesoplodon bidens,3400000,1.39E+13,472647,36794,,,Estimated from body_mass-density regressions. ,,1.39E+13,1.8E+13
+105,Cetartiodactyla,Ziphiidae,Mesoplodon carlhubbsi,3400000,1.37E+13,467692,36408,,,Estimated from body_mass-density regressions. ,,1.1E+12,1.37E+13
+106,Cetartiodactyla,Ziphiidae,Mesoplodon grayi,2900000,6.61E+13,2437908,201129,,,Estimated from body_mass-density regressions. ,,6.61E+13,1.17E+14
+107,Cetartiodactyla,Ziphiidae,Mesoplodon bowdoini,2600000,6.54E+13,2544136,218428,,,Estimated from body_mass-density regressions. ,,4.42E+12,6.54E+13
+108,Cetartiodactyla,Ziphiidae,Tasmacetus shepherdi,2500000,6.45E+13,2561889,223123,,,Estimated from body_mass-density regressions. ,,4.42E+12,6.45E+13
+109,Cetartiodactyla,Ziphiidae,Indopacetus pacificus,2200000,1.07E+14,4511007,411644,,,Estimated from body_mass-density regressions. ,,1.07E+14,8.99E+13
+110,Cetartiodactyla,Ziphiidae,Mesoplodon mirus,2100000,6.3E+12,272891,25329,,,Estimated from body_mass-density regressions. ,,6.3E+12,3.71E+13
+111,Cetartiodactyla,Ziphiidae,Mesoplodon layardii,1500000,8.37E+13,4291518,450371,,,Estimated from body_mass-density regressions. ,,8.37E+13,1.06E+14
+112,Cetartiodactyla,Ziphiidae,Mesoplodon ginkgodens,1500000,9.13E+13,4678225,490954,,,Estimated from body_mass-density regressions. ,,3.49E+12,9.13E+13
+113,Cetartiodactyla,Ziphiidae,Mesoplodon hectori,1000000,6.99E+13,4387180,533849,,,Estimated from body_mass-density regressions. ,,5.07E+12,6.99E+13
+126,Cetartiodactyla,Ziphiidae,Mesoplodon traversii,500000,3.48E+13,3085930,483609,,,Estimated from body_mass-density regressions. ,,3.48E+13,2.7E+13
+114,Cetartiodactyla,Kogiidae,Kogia breviceps,432000,2.51E+14,24010660,3970715,,,Estimated from body_mass-density regressions. ,,2.51E+14,2.27E+14
+127,Cetartiodactyla,Ziphiidae,Mesoplodon perrini,300000,80157600000,9186,1735,,,Estimated from body_mass-density regressions. ,,80157600000,44314167430
+115,Sirenia,Dugongidae,Dugong dugon,295000,6.59E+12,761190,144624,,,Estimated from body_mass-density regressions. ,,6.59E+12,5.38E+12
+97,Cetartiodactyla,Delphinidae,Tursiops australis,240000,1.55E+12,197998,40562,,,Estimated from body_mass-density regressions. ,,1.55E+12,9.94E+11
+116,Cetartiodactyla,Delphinidae,Tursiops aduncus,210000,2.66E+13,3648298,784717,,,Estimated from body_mass-density regressions. ,,2.66E+13,1.84E+13
+90,Cetartiodactyla,Delphinidae,Peponocephala electra,206000,1.67E+14,23163948,5017457,,,"Estimated from body_mass-density regressions. IUCN, summing existing estimates together over a limited potion of range gives 200000",,1.67E+14,1.48E+14
+117,Cetartiodactyla,Delphinidae,Orcaella brevirostris,190000,5.55E+11,79952,17837,,,Estimated from body_mass-density regressions. ,,4.25E+12,5.55E+11
+92,Cetartiodactyla,Kogiidae,Kogia sima,180000,2.35E+14,34797025,7917722,,,"Estimated from body_mass-density regressions. IUCN, sum of all current estimates over a limited range gives 200000",,2.35E+14,2.09E+14
+91,Cetartiodactyla,Delphinidae,Feresa attenuata,170000,1.99E+14,30254426,7029229,,,Estimated from body_mass-density regressions. IUCN estimate over a small proportion of range is approx. 200000,,1.99E+14,1.77E+14
+89,Cetartiodactyla,Delphinidae,Lagenodelphis hosei,164000,1.65E+14,25594752,6025118,,,"Estimated from body_mass-density regressions. IUCN, estimates 320000 over a small portion of range",,1.65E+14,1.48E+14
+93,Cetartiodactyla,Delphinidae,Steno bredanensis,130000,2.2E+14,38305955,9815436,,,"Estimated from body_mass-density regressions. IUCN, estimate of 221186 for small part of range.",,2.2E+14,1.8E+14
+118,Cetartiodactyla,Delphinidae,Lissodelphis peronii,116000,7.81E+13,14389297,3843661,,,Estimated from body_mass-density regressions. ,,7.81E+13,1.01E+14
+94,Cetartiodactyla,Delphinidae,Lagenorhynchus cruciger,110000,6.18E+13,11705309,3187918,,,"Estimated from body_mass-density regressions. IUCN, estimates 144300 south of the Antarctic Convergence",,6.18E+13,8.43E+13
+119,Cetartiodactyla,Delphinidae,Stenella frontalis,110000,4.57E+13,8646112,2354752,,,Estimated from body_mass-density regressions. ,,4.57E+13,4.3E+13
+120,Cetartiodactyla,Delphinidae,Stenella clymene,75000,4.08E+13,9361479,2932106,,,Estimated from body_mass-density regressions. ,,4.08E+13,2.51E+13
+121,Cetartiodactyla,Phocoenidae,Phocoena dioptrica,65000,6.14E+13,15123091,4990681,,,Estimated from body_mass-density regressions. ,,2.43E+12,6.14E+13
+122,Cetartiodactyla,Phocoenidae,Phocoena spinipinnis,60000,1.27E+12,326692,111006,,,Estimated from body_mass-density regressions. ,,1.27E+12,9.82E+11
+96,Cetartiodactyla,Delphinidae,Sotalia guianensis,55000,4.58E+12,1226074,430048,,,"Estimated from body_mass-density regressions. IUCN, relatively abundant over its range, summing some of which over a limited portion of which gives approx. 15000.",,4.58E+12,3.15E+12
+123,Cetartiodactyla,Delphinidae,Sotalia fluviatilis,55000,6.69E+11,179162,62841,,,Estimated from body_mass-density regressions. ,,2.12E+12,6.69E+11
+88,Cetartiodactyla,Delphinidae,Stenella longirostris,50500,1.97E+14,55115982,19943841,,,Estimated from body_mass-density regressions. ,,1.97E+14,1.69E+14
+98,Cetartiodactyla,Pontoporiidae,Pontoporia blainvillei,40500,4.8E+11,149832,58765,,,Estimated from body_mass-density regressions. ,,4.8E+11,1.01E+12
+124,Cetartiodactyla,Phocoenidae,Neophocaena phocaenoides,32500,4.09E+12,1422699,604656,,,Estimated from body_mass-density regressions. ,,4.09E+12,2.5E+12
