@@ -140,8 +140,13 @@ write.csv(summary_biomass_top200_table_long, file = "./output/summary_output/sum
 dat <- expand.grid("lon" = -179.5:179.5, "lat" = 89.5:-89.5)
 dat$fish_biom_gm2_1mg_to_1e5g <- total_fish_pred*10
 
+ttt = matrix(dat$fish_biom_gm2_1mg_to_1e5g, nrow = 360, ncol = 180)
+ttt = ttt[,180:1]
+ttt = ttt[c(181:360,1:180),]
+dat$fish_biom_gm2_1mg_to_1e5g <- as.vector(ttt)
 write.csv(dat, "./output/global_map_data/fish_predictions.csv", row.names = FALSE)
 
+print("Global map data of fish biomass saved to ./output/global_map_data/fish_predictions.csv")
 
 ##########################################################
 ## MARINE MAMMALS AND VERY LARGE FISH (> 100KG)
@@ -233,3 +238,4 @@ summary_biomass_table[10, c(2:4)] <- tot_fish_bioms
 write.csv(summary_biomass_table, file = "./output/summary_output/summary_tables/summary_biomass_table.csv", row.names = FALSE)
 
 
+print("Saved fish, mammal and other global biomass estimates, uncertainty and predictions to ./output/summary_output/summary_tables/")

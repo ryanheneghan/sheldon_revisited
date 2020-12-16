@@ -60,6 +60,8 @@ plot_list[[3]] = resid_plot(gm1, xvar = "logdepth", ylab = ylabb, xlab = express
 
 ggsave(filename = "./figures/suppfig1_residuals_bacteria_abundance.png", plot = ggarrange(plots = plot_list, nrow = 1), width = 20, height = 6)
 
+print("Summary figures of partial residuals of bacteria abundance stat model saved to ./figures/suppfig1_residuals_bacteria_abundance.png")
+
 # Calculate global bacteria abundance across entire water column, and top 200m
 glob_bac_abund1 <- pred_func(gm1, xvars = c("SST", "logchlo", "logdepth"), pred_dat = pred_dat, grid_areas = areas, other_xvar_name = NA, other_xvar_val = NA, over_depth = TRUE, int = 'confidence')
 glob_bac_abund <- sum(glob_bac_abund1$total, na.rm = TRUE)*1e6 # Multiply by 1e6 to go from ml to m^3
@@ -111,9 +113,12 @@ bac_biom_hist <- ggplot(bac_bioms, aes(log10_Vol_um3)) +
                    axis.ticks = element_line(size = 1),
                    legend.position = "none")+
   ylab('Density') + 
-  xlab(expression(paste('log'[10],'(Body Size ', mu, 'g)', sep = '')))
+  xlab(expression(paste('log'[10],'(Body Size pg)', sep = '')))
 
 ggsave(filename = "./figures/suppfig2_density_bacteria_abundance.png", plot =bac_biom_hist, width = 8, height =7)
+
+print("Summary figures of individual bacteria biomass saved to ./figures/suppfig2_density_bacteria_abundance.png")
+
 
 ## Calculate total bacteria biomass and 95% uncertainty bounds
 tot_bac <- c(glob_bac_abund, glob_bac_abund/abund_uncert, glob_bac_abund*abund_uncert) # 95% interval and mean global bacteria abundance estimate
@@ -129,6 +134,9 @@ bacteria_predictions <- data.frame('lon' = pred_dat$Long, 'lat' = pred_dat$Lat, 
 
 ## Save bacteria predictions to csv
 write.csv(bacteria_predictions, './output/global_map_data/bacteria_predictions.csv', row.names = FALSE)
+
+print("Global map of bacteria biomass saved to ./output/global_map_data/bacteria_predictions.csv")
+
 
 ## Save uncertainty estimate
 group_standard_errors <- read.csv("./output/summary_output/summary_tables/group_standard_errors.csv")
@@ -166,6 +174,7 @@ summary_biomass_top200_table_long[c(which(summary_biomass_top200_table_long$Grou
                                   c("Biomass_Pg_wet_weight_estimate",  "Biomass_Pg_wet_weight_95CI_lower", "Biomass_Pg_wet_weight_95CI_upper")] <- tot_bac_biom_upper200_bybin
 write.csv(summary_biomass_top200_table_long, file = "./output/summary_output/summary_tables/summary_biomass_top200_table_long.csv", row.names = FALSE)
 
+print("Total global bacteria biomass and uncertainty estimates saved to tables in ./output/summary_output/summary_tables/")
 
 
 
@@ -215,4 +224,5 @@ num_store
 
 write.csv(num_store, "./output/summary_output/bacteria_climchange_projections.csv", row.names = FALSE)
 
+print("Future bacteria biomass estimate saved to ./output/summary_output/bacteria_climchange_projections.csv")
 

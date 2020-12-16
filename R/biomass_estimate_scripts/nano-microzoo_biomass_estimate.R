@@ -60,6 +60,7 @@ plot_list[[3]] = resid_plot(gm1, xvar = "logdepth", ylab = ylabb, xlab = express
 
 ggsave(filename = "./figures/suppfig3_residuals_microzoo_biomass.png", plot = ggarrange(plots = plot_list, nrow = 1), width = 20, height = 6)
 
+print("Summary figures of partial residuals of microzoo biomass stat model saved to suppfig3_residuals_microzoo_biomass.png")
 
 ##########################################################
 ## STEP 2: PREDICT GLOBAL MICROZOOPLANKTON BIOMASS AND 
@@ -83,6 +84,9 @@ microzoo_predictions <- data.frame('lon' = pred_dat$Long,
                                    'microzoo_biom_gm2_top200m' = pred$density_top200/100)
 
 write.csv(microzoo_predictions, './output/global_map_data/microzoo_predictions.csv', row.names = FALSE)
+
+print("Global map data of microzoo biomass saved to ./output/global_map_data/microzoo_predictions.csv")
+
 
 print("Calculating uncertainty of global nano/microzoo biomass estimate")
 ## Calculate uncertainty of estimate using bootstrap sampling
@@ -175,4 +179,6 @@ summary_biomass_top200_table_long[c(which(summary_biomass_top200_table_long$Grou
                                             summary_biomass_top200_table_long$log10_Size_Midpoint_g %in% microzoo_sizes)),
                                   c("Biomass_Pg_wet_weight_estimate",  "Biomass_Pg_wet_weight_95CI_lower", "Biomass_Pg_wet_weight_95CI_upper")] <- tot_microzoo_biom_upper200_bybin 
 write.csv(summary_biomass_top200_table_long, file = "./output/summary_output/summary_tables/summary_biomass_top200_table_long.csv", row.names = FALSE)
+
+print("Total global nano and microzoo biomass and uncertainty estimates saved to tables in ./output/summary_output/summary_tables/")
 

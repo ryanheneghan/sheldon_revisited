@@ -46,7 +46,7 @@ gm1 <- lm(logBiom ~ poly(logchlo, 3) + poly(logdepth, 3) + SST + BiomassMethod, 
 
 # PLOT MODEL PARTIAL RESIDUALS
 print("Plotting main effects plots for global non-giant rhizaria mesozoo biomass statistical model")
-ylabb = c(expression(paste("log"[10], "(Biomass, mgC m"^-3, ")"), sep  = ""))
+ylabb = c(expression(paste("log"[10], "(Biomass, mg m"^-3, ")"), sep  = ""))
 
 plot_list = list()
 plot_list[[1]] = resid_plot(gm1, xvar = "SST", ylab = ylabb, xlab = expression(paste("Temperature (", degree, "C)", sep = "")), subtitle = "a)", new_xticks = NA)
@@ -55,6 +55,8 @@ plot_list[[3]] = resid_plot(gm1, xvar = "logdepth", ylab = ylabb, xlab = express
 plot_list[[4]] = resid_plot(gm1, xvar = "BiomassMethod", ylab = ylabb, xlab = 'Measurement Method', subtitle = "d)", new_xticks = c("Ash-free Dry", "Carbon", "CHN Carbon", "Displacement", "Dry", "Settled", "Wet"))
 
 ggsave(filename = "./figures/suppfig4_residuals_mesozoo_biomass.png", plot = ggarrange(plots = plot_list, nrow = 2), width = 13.3, height = 12)
+
+print("Summary figures of partial residuals of non-rhizaria mesozoo biomass stat model saved to ./figures/suppfig4_residuals_mesozoo_biomass.png")
 
 ## Giant rhizaria
 print("Calculating giant rhizaria mesozoo biomass")
@@ -84,6 +86,7 @@ plot_list[[4]] = resid_plot(gm1_rhiz2, xvar = "logchlo", ylab = ylabb2, xlab = e
 
 ggsave(filename = "./figures/suppfig5_residuals_rhizaria_biomass.png", plot = ggarrange(plots = plot_list, nrow = 2), width = 13.3, height = 12)
 
+print("Summary figures of partial residuals of rhizaria biomass stat model saved to ./figures/suppfig5_residuals_rhizaria_biomass.png")
 
 ##########################################################
 ## STEP 2: PREDICT GLOBAL MESOZOOPLANKTON BIOMASS AND 
@@ -116,6 +119,9 @@ mesozoo_predictions <- data.frame('lon' = pred_dat$Long,
                                    'mesozoo_biom_gm2_top200m' = (pred_miscmeso$density_top200/1000 + pred_rhiz0to200$density/100))
 
 write.csv(mesozoo_predictions, './output/global_map_data/mesozoo_predictions.csv', row.names = FALSE)
+
+print("Global map data of mesozoo biomass saved to ./output/global_map_data/mesozoo_predictions.csv")
+
 
 print("Calculating total mesozoo biomass uncertainty")
 ## Calculate uncertainty of estimate using bootstrap sampling
@@ -189,4 +195,5 @@ summary_biomass_top200_table_long[c(which(summary_biomass_top200_table_long$Grou
                                   c("Biomass_Pg_wet_weight_estimate",  "Biomass_Pg_wet_weight_95CI_lower", "Biomass_Pg_wet_weight_95CI_upper")] <- tot_mesozoo_biom_upper200_bybin
 write.csv(summary_biomass_top200_table_long, file = "./output/summary_output/summary_tables/summary_biomass_top200_table_long.csv", row.names = FALSE)
 
+print("Total global mesoozoo biomass and uncertainty estimates saved to tables in ./output/summary_output/summary_tables/")
 

@@ -118,7 +118,7 @@ pico_biom <- c(pico_ave, pico_ave/total_error, pico_ave*total_error)
 nano_biom <- c(nano_ave, nano_ave/total_error, nano_ave*total_error)
 micro_biom <- c(micro_ave, micro_ave/total_error, micro_ave*total_error)
 
-print("Save phytoplankton biomass estimates, uncertainty and predictions")
+print("Save phytoplankton global biomass estimates, uncertainty and predictions to ./output/summary_output/summary_tables/")
 summary_biomass_table <- read.csv("./output/summary_output/summary_tables/summary_biomass_table.csv")
 summary_biomass_table[2, c(2:4)] <- pico_biom
 summary_biomass_table[3, c(2:4)] <- nano_biom
@@ -203,3 +203,6 @@ phyto_predictions <- data.frame('lon' = pred_dat$Long,
 
 
 write.csv(phyto_predictions, './output/global_map_data/phyto_predictions.csv', row.names = FALSE)
+
+print("Global map data of phytoplaknton biomass saved to ./output/global_map_data/phyto_predictions.csv")
+
