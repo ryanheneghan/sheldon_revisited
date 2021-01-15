@@ -5,10 +5,10 @@
 ################## SENSITIVITY ANALYSIS OF SLOPE AND INTERCEPT ########################
 ##
 ## Here, we vary the biomass in each size bin randomly using the standard error we have calculated
-## for each bin. Then, we can refit the slope and intercept for each permutation. We do this 1,000 times
+## for each bin. Then, we can refit the slope and intercept for each permutation. We do this 10,000 times
 ## to get an idea of the standard error of our slope estimate, first assuming the biomass is equally distributed.
 ## The second time, we do it not assuming the biomass is equally distributed.
-## We also report the 95% confidence interval of the slope of the abundance size spectrum
+## We also report the 95% confidence interval of the slope of the abundance size spectrum with mean and varying biomass for each group
 #########################################################################
 
 #rm(list=ls())

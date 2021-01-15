@@ -30,11 +30,18 @@ sens_test_wrapper <- function(glob_biom_frame, save_ref){
   mean_biom_sensitivity <- sensitivity_func(10000, log_mean_biom = log10(glob_biom_all), log_se = log_se, var_biom = FALSE, sizes = sizes, x = x)
   mean_biom_sensitivity <- data.frame("intercept"= mean_biom_sensitivity[,1], "slope" = mean_biom_sensitivity[,2])
   
+  write.csv(mean_biom_sensitivity, file = paste('./output/summary_output/sensitivity_analysis/biomass_slopes/all_sens_slope_ints_mean_biom', save_ref, '.csv', sep = ""), row.names = FALSE)
+  print(paste("Slopes and intercepts from 10,000 simulations using mean biomass for each group stored in ", paste('./output/summary_output/sensitivity_analysis/biomass_slopes/all_sens_slope_ints_mean_biom', save_ref, '.csv', sep = ""), sep = ""))
+  
   # Obtain distribution of slopes and intercepts when biomass is allowed to vary for each group, based on group standard error,
   # and distribution of biomass varies across the size range of each group
   print("Calculating slope and intercept uncertainty when both biomass and distribution of biomass allowed to vary")
   distn_biom_sensitivity <- sensitivity_func(10000, log_mean_biom = log10(glob_biom_all), log_se = log_se, var_biom = TRUE, sizes = sizes, x = x)
   distn_biom_sensitivity <- data.frame("intercept" = distn_biom_sensitivity[,1], "slope" = distn_biom_sensitivity[,2])
+  
+  write.csv(distn_biom_sensitivity, file = paste('./output/summary_output/sensitivity_analysis/biomass_slopes/all_sens_slope_ints_distn_biom', save_ref, '.csv', sep = ""), row.names = FALSE)
+  
+  print(paste("Slopes and intercepts from 10,000 simulations allowing varying biomass for each group stored in ", paste('./output/summary_output/sensitivity_analysis/biomass_slopes/all_sens_slope_ints_distn_biom', save_ref, '.csv', sep = ""), sep = ""))
   
   ## Summary table
   print("Saving summary table of mean and sd of biomass spectrum slope from both tests")
