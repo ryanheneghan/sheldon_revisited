@@ -1,6 +1,6 @@
 # Function to calculate slope and intercept sensitivity to changes in biomass of groups, and changes in distribution of biomass across
 # each group's size range
-sensitivity_func <- function(n = 10000, log_mean_biom = log10(glob_biom_all), log_se = log_se, var_biom = FALSE, sizes, x){
+sensitivity_func <- function(n = 10000, log_mean_biom = log10(glob_biom_all), log_se = log_se, var_biom = FALSE, sizes, x, props){
   
   out_store <- matrix(NA, nrow = n, ncol = 2)
   
@@ -10,6 +10,7 @@ sensitivity_func <- function(n = 10000, log_mean_biom = log10(glob_biom_all), lo
   for(i in 1:length(log_mean_biom)){
     glob_biom_ests[,i] <- rnorm(n, mean = log_mean_biom[i], sd = log_se[i])
   }
+  
   
   pb <- txtProgressBar(min = 0, max = n, style = 3)
   for(i in 1:n){
@@ -24,9 +25,20 @@ sensitivity_func <- function(n = 10000, log_mean_biom = log10(glob_biom_all), lo
       curr_glob_biom_all <- 10^log_mean_biom
     }
     
+    # To test 
+#    tester_props <- matrix(0,nrow = 10000, ncol = 3)
+#    for(i in 1:10000){
+#    j=1
+#    num_bins <- sum(fracB[,j] > 0)
+#    which_bins <- which(fracB[,j] > 0)
+#    curr_fracb <- runif(num_bins)*props[which_bins,j]
+#    tester_props[i,] <- curr_fracb/sum(curr_fracb)
+#    }
+    
     for (j in 1:dim(fracB)[2]){
       num_bins <- sum(fracB[,j] > 0)
-      curr_fracb <- runif(num_bins)
+      which_bins <- which(fracB[,j] > 0)
+      curr_fracb <- runif(num_bins)*props[which_bins,j]
       fracB[c(fracB[,j] > 0),j]<- curr_fracb/sum(curr_fracb)
     }
     

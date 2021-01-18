@@ -23,13 +23,15 @@ source("./R/processing_scripts/sensitivity_test_wrapper_func.R")
 # Conduct sensitivity analysis for global biomass across all depths
 print("Now conducting sensitivity test for global biomass across all depths")
 glob_biom_frame1 <- read.csv('./output/summary_output/summary_tables/summary_biomass_table.csv')
+long_biom_frame1 <- read.csv('./output/summary_output/summary_tables/summary_biomass_table_long.csv')
 save_ref1 <- 'all_biom'
-sens_test_wrapper(glob_biom_frame = glob_biom_frame1, save_ref = save_ref1)
+sens_test_wrapper(glob_biom_frame = glob_biom_frame1, long_biom_frame = long_biom_frame1, save_ref = save_ref1)
 
 # Conduct sensitivity analysis for global biomass in top 200m only
 print("Now conducting sensitivity test for global biomass in top 200m")
 glob_biom_frame2 <- read.csv('./output/summary_output/summary_tables/summary_biomass_table_top200.csv')
+long_biom_frame2 <- read.csv('./output/summary_output/summary_tables/summary_biomass_top200_table_long.csv')
 save_ref2 <- 'top200_biom'
-sens_test_wrapper(glob_biom_frame = glob_biom_frame2, save_ref = save_ref2)
+sens_test_wrapper(glob_biom_frame = glob_biom_frame2, long_biom_frame = long_biom_frame2, save_ref = save_ref2)
 
 

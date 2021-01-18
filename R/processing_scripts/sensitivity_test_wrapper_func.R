@@ -6,7 +6,7 @@
 # Load slope and intercept sensitivity function
 source("./R/processing_scripts/sensitivity_func.R")
 
-sens_test_wrapper <- function(glob_biom_frame, save_ref){
+sens_test_wrapper <- function(glob_biom_frame, long_biom_frame, save_ref){
   glob_biom_all <- glob_biom_frame$Biomass_Pg_wet_weight_estimate*1e15 # Convert from Pg to grams
   glob_biom_all<- c(glob_biom_all,sum(glob_biom_all[2:4])) # Get total phytoplankton
   glob_biom_all <- glob_biom_all[c(1,12,5,6,7,8,9,10,11)]  # Remove pico, nano and microphytoplankton
@@ -16,9 +16,17 @@ sens_test_wrapper <- function(glob_biom_frame, save_ref){
   x <- -13.5:8.5
   
   # Data.frame (sizes) with 1s for size range and 0s for outside size range for each group. Can be used to modify number of bins
-  sizes <- data.frame("bact"=c(rep(1,3),rep(0,20)),"phyt"=c(rep(1,11),rep(0,12)),"nanozoo" = c(0,rep(1,3),rep(0,19)),"microzoo"=c(rep(0,3),rep(1,8),rep(0,12)),"mesozoo"=c(rep(0,8),rep(1,7),rep(0,8)),
-                      "macrozoo"=c(rep(0,11),rep(1,6),rep(0,6)),"mesopelagic" = c(rep(0,12), rep(1,5), rep(0,6)), "fish"=c(rep(0,11),rep(1,9), rep(0,3)), "mammals" = c(rep(0,18), rep(1,5)))
-  rownames(sizes) <- x
+  long_frame <- matrix(long_biom_frame$Biomass_Pg_wet_weight_estimate, nrow = length(x))
+  long_frame[,2] <- long_frame[,2] + long_frame[,3] + long_frame[,4]
+  long_frame <- long_frame[,-c(3,4)]
+  colnames(long_frame) <- c("bact","phyt","nanozoo","microzoo","mesozoo","macrozoo","mesopelagic","fish","mammals")
+  sizes <- long_frame
+  sizes[sizes > 0] <- 1
+ 
+  # Fraction of biomass in each size bin for each group
+  fracsB1 <- sweep(long_frame, 2, colSums(long_frame), "/")
+
+  rownames(sizes) <- rownames(fracsB1) <- x
   
   # Import 95% confidence interval and divide by 1.96 to get standard errors
   group_errors <- read.csv("./output/summary_output/summary_tables/group_standard_errors.csv")
@@ -27,7 +35,7 @@ sens_test_wrapper <- function(glob_biom_frame, save_ref){
   
   # Obtain distribution of slopes and intercepts when distribution of average biomass is allowed to vary across the size range of each group
   print("Calculating slope and intercept uncertainty when distribution of average biomass only is allowed to vary")
-  mean_biom_sensitivity <- sensitivity_func(10000, log_mean_biom = log10(glob_biom_all), log_se = log_se, var_biom = FALSE, sizes = sizes, x = x)
+  mean_biom_sensitivity <- sensitivity_func(10000, log_mean_biom = log10(glob_biom_all), log_se = log_se, var_biom = FALSE, sizes = sizes, x = x, props = fracsB1)
   mean_biom_sensitivity <- data.frame("intercept"= mean_biom_sensitivity[,1], "slope" = mean_biom_sensitivity[,2])
   
   write.csv(mean_biom_sensitivity, file = paste('./output/summary_output/sensitivity_analysis/biomass_slopes/all_sens_slope_ints_mean_biom', save_ref, '.csv', sep = ""), row.names = FALSE)
@@ -36,7 +44,7 @@ sens_test_wrapper <- function(glob_biom_frame, save_ref){
   # Obtain distribution of slopes and intercepts when biomass is allowed to vary for each group, based on group standard error,
   # and distribution of biomass varies across the size range of each group
   print("Calculating slope and intercept uncertainty when both biomass and distribution of biomass allowed to vary")
-  distn_biom_sensitivity <- sensitivity_func(10000, log_mean_biom = log10(glob_biom_all), log_se = log_se, var_biom = TRUE, sizes = sizes, x = x)
+  distn_biom_sensitivity <- sensitivity_func(10000, log_mean_biom = log10(glob_biom_all), log_se = log_se, var_biom = TRUE, sizes = sizes, x = x, props = fracsB1)
   distn_biom_sensitivity <- data.frame("intercept" = distn_biom_sensitivity[,1], "slope" = distn_biom_sensitivity[,2])
   
   write.csv(distn_biom_sensitivity, file = paste('./output/summary_output/sensitivity_analysis/biomass_slopes/all_sens_slope_ints_distn_biom', save_ref, '.csv', sep = ""), row.names = FALSE)
